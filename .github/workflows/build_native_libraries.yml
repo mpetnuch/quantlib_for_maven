@@ -16,7 +16,7 @@ jobs:
         java-version:
           - 21
         os:
-          - macos-13-arm64
+          - macos-14
 
     runs-on: ${{ matrix.os }}
 
