@@ -49,6 +49,26 @@ runs:
       run: |
         brew install swig
 
+    - name: Setup macOs 13 ARM64
+      if: inputs.runner-name == 'macos-13-arm64'
+      shell: bash
+      run: |
+        brew install swig
+
+    - name: Setup macOs 14
+      if: inputs.runner-name == 'macos-14'
+      shell: bash
+      run: |
+        brew install swig
+
+    - name: Setup macOs 14 ARM64
+      if: inputs.runner-name == 'macos-14-arm64'
+      shell: bash
+      run: |
+        brew install swig
+
+
+
     - name: Setup Windows
       if: runner.os == 'Windows'
       shell: pwsh
